@@ -3,9 +3,13 @@ package br.com.skeleton.service.impl;
 import br.com.skeleton.repositories.entities.PersonEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
+@ExtendWith({MockitoExtension.class})
 class PerosonServiceImplTest {
     PerosonServiceImpl perosonServiceImpl = new PerosonServiceImpl();
 

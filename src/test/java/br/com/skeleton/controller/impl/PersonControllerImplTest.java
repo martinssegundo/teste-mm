@@ -3,8 +3,11 @@ package br.com.skeleton.controller.impl;
 import br.com.skeleton.controller.entities.response.PersonResponse;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 
+@ExtendWith({MockitoExtension.class})
 class PersonControllerImplTest {
     PersonControllerImpl personControllerImpl = new PersonControllerImpl();
 
@@ -26,5 +29,3 @@ class PersonControllerImplTest {
         Assertions.assertEquals(null, result);
     }
 }
-
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme
